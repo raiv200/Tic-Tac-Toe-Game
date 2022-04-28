@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const [newGame, setNewGame] = useState<boolean>(false);
   const [squares, setSqaures] = useState<Array<any>>(Array(9).fill(null));
 
-  var winner = calculateWinner(squares);
+  let winner = calculateWinner(squares);
 
 
   // handle Choose player
@@ -81,6 +81,7 @@ const Home: NextPage = () => {
     }
     return null;
   }
+  
   return (
     <div className="flex min-h-screen bg-[#192a32] flex-col items-center  py-2">
       <Head>
