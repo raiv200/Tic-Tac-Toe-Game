@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+ .button{
+     @apply flex items-center justify-center text-lg font-bold text-gray-900 transition duration-300 ease-in ;
+ }
+  .square {
+    @apply flex h-[90px] w-[90px] md:h-[100px] md:w-[100px] items-center justify-center bg-[#1f3540] rounded-2xl shadow-md active:scale-125 transition duration-200 ease-in hover:bg-[#18272e] shadow-gray-400/30 ;
+  }
+
+  .board {
+    @apply mt-24 flex h-[350px] w-[350px] md:mt-20 md:h-[400px] md:w-[400px] flex-col items-center justify-center space-y-4 rounded-xl;
+  }
+
+  .board-row {
+    @apply flex items-center justify-center space-x-4;
+  }
+}
